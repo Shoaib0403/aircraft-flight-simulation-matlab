@@ -1,20 +1,34 @@
-# aircraft-flight-simulation-matlab
-> MATLAB project on Aircraft Flight Simulation based on a YouTube tutorial. Includes modeling of aircraft dynamics and control for basic flight analysis.
+# Aircraft Flight Simulation (MATLAB)
 
-(/'/'/' Matlab.../'/'/')
+This project is a *MATLAB-based aircraft flight simulation*, created while following a YouTube tutorial.  
+It models the basic dynamics of an aircraft and simulates flight behavior under different conditions.  
+
+##Tools Used
+- MATLAB 
+- Simulink  
+
+##MATLAB Code
+
+```matlab
 clc
 clear all
 close all
-%%
-% let's import the flight data
+
+% Let's import the flight data
 load simdata
-%now let's extract the individual columns for the aircraft's position
-time = simdata(:,1)
-x = simdata (:, [1,2]) %Extract the x position
-y = simdata (:, [1,3]) %Extract the y position
-z = simdata (:, [1,4]) %Extract the z position
-Roll = simdata (:, [1,5]) %Roll is represented by the greek letter phi
-pitch = simdata (:, [1,6]) %Pitch is represented by the greek letter theta
-yaw = simdata   (:, [1,7]) %yaw is represented by the greek letter psi
-%%
-% now we import this data to simulink
+
+% Extract the individual columns for the aircraft’s position
+x = simdata(:,1);   % x position
+z = simdata(:,3);   % z position
+
+% Roll, Pitch, Yaw
+roll  = simdata(:,15); % phi
+pitch = simdata(:,16); % theta
+yaw   = simdata(:,17); % psi
+
+% Now we import this data to Simulink
+
+🎯 Purpose
+
+This repository was created for learning purposes while following a tutorial.
+All code was written manually in MATLAB to replicate the results shown in the video.
