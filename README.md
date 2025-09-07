@@ -1,6 +1,6 @@
 # Aircraft Flight Simulation (MATLAB)
 
-This project is a *MATLAB-based aircraft flight simulation*, created while following a YouTube tutorial.  
+This project is a *MATLAB-based aircraft flight simulation*, created while following a YouTube tutorial by Higher Meditations.
 It models the basic dynamics of an aircraft and simulates flight behavior under different conditions.  
 
 ##Tools Used
